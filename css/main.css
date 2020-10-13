@@ -1,0 +1,83 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #f0f0f0;
+    
+    overflow-x: hidden;
+    
+}
+main{
+    padding: 1rem;
+}
+.flex{
+    display: flex;
+    margin: auto;
+    max-width:100rem;
+    
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section.teaserCard{
+    height: 33rem;
+    width: 340px;
+    margin: 1rem;
+    background-color: white;
+    box-shadow: 0 0 1rem gray;
+    padding: 5px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.teaserCard img{
+    width: 340px;
+    margin: auto;
+    display: block;
+    border-radius: 30px;
+}
+
+
+.teaserCard#addEntryCard a{
+    font-size: 10rem;
+    text-decoration: none;
+    color: #555;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-65%);
+}
+
+nav{
+    width: 100%;
+    background-color: darkslateblue;
+    margin: 0;
+    top: 0;
+    color: #f0f0f0;
+    padding: 2px;
+}
+
+.modal{
+    position: fixed;
+    top: 5%;
+    left: calc(50% - 40rem);
+    width: 80rem;
+    height: 30rem;
+   
+    background-color: white;
+    display: none;
+    border: 10px solid darkslategray;
+    border-radius: 1rem;
+    box-shadow: 0 0 5rem black;
+    padding: 1rem;
+}
+
+.modal img{
+    float: right;
+    box-shadow: 0 0 5rem lightslategray;
+    margin: 10px;
+    width: 400px;
+}
+
+.editEntryForm, #discardChanges{
+    display: none;
+}
